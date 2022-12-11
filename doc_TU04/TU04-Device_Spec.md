@@ -89,6 +89,7 @@ Model Number: TU-04-C04
 
 # Hardware Specification
 ## Power and Enclosure Specification
+
 |Item|Description|
 |--|--|
 |Input Voltage|DC 12V to 24V or POE  |
@@ -102,6 +103,7 @@ Model Number: TU-04-C04
 |Enclosure Type|Aluminum Extrusions|
 
 ## RFID Reader Specification
+
 |Item|Description|
 |--|--|
 |Antenna Channel|	4 Channel|
@@ -110,6 +112,7 @@ Model Number: TU-04-C04
 |UHF Tag Protocol|	EPC global UHF Class 1 Gen 2 ISO 18000-6C|
 
 ## Wi-Fi Specification
+
 |Item|Description|
 |--|--|
 |Frequency|	2.4Ghz~2.5Ghz
@@ -120,6 +123,7 @@ Model Number: TU-04-C04
 
 
 ## Ethernet Specification
+
 |Item|Description|
 |--|--|
 |Speed|	RJ45, 10/100 Mbps|
@@ -127,12 +131,14 @@ Model Number: TU-04-C04
 |Voltage|	44V~57V DC|
 
 ## USB Type-C Port Specification
+
 |Item|Description|
 |--|--|
 |Supported Protocol|	USB Virtual Comm Port
 |Baud|	921600 Baud, 8bit, no-parity, 1 stop bit
 
 ## Backend Server Connectivity
+
 |Item|Description|
 |--|--|
 |Server Connection|	MQTT Broker with TCP, TCP-TLS, Web-Socket Connection|
@@ -142,6 +148,7 @@ Model Number: TU-04-C04
 |Other|	NTP auto RTC update|
 
 ## Output Port Specification
+
 |Item|Description|
 |--|--|
 |Total Output Port Channel|	2 Channel|
@@ -152,6 +159,7 @@ Model Number: TU-04-C04
 ![Output Port Architecture](picture/io%20port%20design-Output%20Port.png)
 
 ## Input Port Specification
+
 |Item|Description|
 |--|--|
 |Input Port|2 Channel|
@@ -161,6 +169,7 @@ Model Number: TU-04-C04
 ![Input Port Architechture](picture/io%20port%20design-Input%20Port.png)
 
 ## FWBus Specification
+
 |Item|Description|
 |--|--|
 |Port|Pin A+GND, Pin B+GND|
