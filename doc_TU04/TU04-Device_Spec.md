@@ -5,7 +5,7 @@ Model Number: TU-04-C04
 
 ![](https://github.com/khgoh99/wirio3doc-iot-rfid-reader/raw/main/picture/Body%20View.png)
 
-[Downlod Specification In PDF](https://github.com/khgoh99/wirio3doc-iot-rfid-reader/raw/main/pdf/TU-04-C04%20Product%20Specification.pdf)
+[Downlod Specification In PDF](TU-04-C04%20Product%20Specification.pdf)
 # System Feature
 
 ## Wi-Fi/Ethernet Connected UHF RFID Tag Reader
