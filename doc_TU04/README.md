@@ -11,4 +11,5 @@ To quickly setup the device through the android app, please refer link below,
 
 # Other document
 [Device Specification](TU04-Device_Spec.md)
+
 [Device Specification (PDF)](pdf/TU-04-C04 Product Specification.pdf)
