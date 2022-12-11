@@ -3,9 +3,9 @@
 
 Model Number: TU-04-C04
 
-![](https://github.com/khgoh99/wirio3doc-iot-rfid-reader/raw/main/picture/Body%20View.png)
+![](picture/Body%20View.png)
 
-[Downlod Specification In PDF](TU-04-C04%20Product%20Specification.pdf)
+[Downlod Specification In PDF](pdf/TU-04-C04%20Product%20Specification.pdf)
 # System Feature
 
 ## Wi-Fi/Ethernet Connected UHF RFID Tag Reader
@@ -149,7 +149,7 @@ Model Number: TU-04-C04
 |Max V+ Voltage|	30V|
 |Max Sink Current|	1A (Non-Inductive Load)|
 
-![Output Port Architecture](https://github.com/khgoh99/wirio3doc-iot-rfid-reader/raw/main/picture/io%20port%20design-Output%20Port.png)
+![Output Port Architecture](picture/io%20port%20design-Output%20Port.png)
 
 ## Input Port Specification
 |Item|Description|
@@ -158,7 +158,7 @@ Model Number: TU-04-C04
 |Connection Type|N Type, External Sink to Ground to Trigger On|
 |Max Sink Current|5mA|
 
-![Input Port Architechture](https://github.com/khgoh99/wirio3doc-iot-rfid-reader/raw/main/picture/io%20port%20design-Input%20Port.png)
+![Input Port Architechture](picture/io%20port%20design-Input%20Port.png)
 
 ## FWBus Specification
 |Item|Description|
