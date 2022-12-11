@@ -7,8 +7,8 @@ Please install Android App below from Google Play Store to start configuring you
 
 To quickly setup the device through the android app, please refer link below,
 
-[Device Configuration With WiRiO3 Device Configurator Guide](WiRIO3%20Device%20Configuration%20Manual.pdf)
+[Device Configuration With WiRiO3 Device Configurator Guide (PDF)](WiRIO3%20Device%20Configuration%20Manual.pdf)
 
 # Other document
-
-[Device Specification](TU-04-C04 Product Specification.pdf)
+[Device Specification](TU04-Device_Spec.md)
+[Device Specification (PDF)](TU-04-C04 Product Specification.pdf)
