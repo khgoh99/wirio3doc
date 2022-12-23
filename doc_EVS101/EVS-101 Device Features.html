@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Industrial Temperature/Humidity/Room Pressure Meter</title>
+        <meta name="EVS-101" content="Device Features">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>Industrial IoT Enviroment Sensor</h1>
+        <p><em><strong>Model : EVS-101</strong></em></p>
+        <p><strong>Logging for Temperature, Humidity and Room Pressure<img src="picture/evs-101 device.png" alt="EVS-101" width="250" height="280" /></strong></p>
+        <ul>
+            <li>Wi-Fi or Ethernet Connected Industrial IoT Device
+                <ul>
+                    <li>Once system power up, it will auto create a persistence connection to the server without user intervention.</li>
+                    <li>Server can be placed either at public cloud, private cloud or LAN.</li>
+                    <li>Device able to work behind firewall.</li>
+                </ul>
+            </li>
+            <li>Network link with MQTT Broker Server
+                <ul>
+                    <li>Open Standard protocol and readily available either using paid version or free version of MQTT Broker.</li>
+                    <li>Messaging format based on JSON format.</li>
+                    <li>JSON messaging format is supported by various programming language and easily integrated to any existing system.</li>
+                    <li>Device support Secure WebSocket or Secure TCP connection to MQTT Broker.</li>
+                </ul>
+            </li>
+            <li>Direct link with USB Connection
+                <ul>
+                    <li>The device also can be configured to use USB Connection without connecting to the network.</li>
+                    <li>Suitable for direct connection with PC/Host system locate beside the device.</li>
+                    <li>Just add an extra JSON layer of wrapper to wrap around the same JSON messaging standard used in the MQTT Broker Server communication.</li>
+                    <li>Thus provide an easy path for future system expansion, from localized system architecture to network-based system architecture.</li>
+                </ul>
+            </li>
+            <li>Device&rsquo;s sensors with MEMS
+                <ul>
+                    <li>Build in with Micro-electromechanical systems sensors (MEMS) technology</li>
+                    <li>Highly accurate and fully digital output direct from the sensors.</li>
+                    <li>Sensors are calibrated and accuracy are guarantee by sensor manufacturer.</li>
+                </ul>
+            </li>
+            <li>TFT display
+                <ul>
+                    <li>Colorful TFT display design</li>
+                    <li>Eye-caching of the sensor reading from a far.</li>
+                </ul>
+            </li>
+            <li>Auto fetch real time clock from Internet Time Server.
+                <ul>
+                    <li>Auto connect with the Internet Time Server to fetch the Real time value (EPOC Time) when network is connected and internet link is available.</li>
+                    <li>Manually set time by server if internet link is not available.</li>
+                    <li>Auto readjust the time drift periodically.</li>
+                    <li>Append the EPOC time to all the message.</li>
+                </ul>
+            </li>
+            <li>Easy setup and configuration
+                <ul>
+                    <li>System configures with Android Apps.</li>
+                    <li>Provide detail device properties, E.g., model number, version number, etc.</li>
+                    <li>Connectivity selection either using Wi-Fi, Ethernet or USB Link.</li>
+                    <li>Upload WPA Enterprise Server private/public key.</li>
+                    <li>Server IP/Domain Name Setup.</li>
+                    <li>DHCP/Fix IP.</li>
+                    <li>Internet Time Server Setting.</li>
+                </ul>
+            </li>
+        </ul>
+        <h1>Specification</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="2" width="575">
+                        <p>Power and Enclosure Specification</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p><em>Input Voltage</em></p>
+                    </td>
+                    <td width="339">
+                        <p>DC 5V USB-C Connector</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p><em>System Power Consumption</em></p>
+                    </td>
+                    <td width="339">
+                        <p>5W Max</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p><em>Operation Humidity</em></p>
+                    </td>
+                    <td width="339">
+                        <p>10%-95%RH</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p><em>Operation Temperature</em></p>
+                    </td>
+                    <td width="339">
+                        <p>25&deg;C to 85&deg;C</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p><em>Storage Humidity</em></p>
+                    </td>
+                    <td width="339">
+                        <p>10%-95%RH</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p><em>Storage Temperature</em></p>
+                    </td>
+                    <td width="339">
+                        <p>0&deg;C to 85&deg;C</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p><em>Enclosure Dimension </em></p>
+                    </td>
+                    <td width="339">
+                        <p>59mm (W) x 88mm (L) x 37mm (H) (Exclude sensor wire and mounting hook, 109mm(L) with mounting hook)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p><em>Enclosure Type</em></p>
+                    </td>
+                    <td width="339">
+                        <p>ABS and Acrylic</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="2" width="575">
+                        <p>Sensors Specification</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p><em>Temperature and Humidity Sensor</em></p>
+                    </td>
+                    <td width="339">
+                        <p>Model SHT-40 By Sensirion</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p><em> Temperature Accuracy</em></p>
+                    </td>
+                    <td width="339">
+                        <p>Up to &plusmn;0.1&deg;C</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p><em>Relative Humidity Accuracy</em></p>
+                    </td>
+                    <td width="339">
+                        <p>Up to &plusmn;1.5%RH</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p><em>Operating Range</em></p>
+                    </td>
+                    <td width="339">
+                        <p>0~100%RH, -40~125&deg;C</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p>Pressure Sensor</p>
+                    </td>
+                    <td width="339">
+                        <p>Model BMP280 By Bosch Sensortech</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p><em>Pressure Absolute Accuracy</em></p>
+                    </td>
+                    <td width="339">
+                        <p>&plusmn;1mBar @950mBar~1050mBar, 0&deg;C ~40&deg;C</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="236">
+                        <p><em>Operating Range</em></p>
+                    </td>
+                    <td width="339">
+                        <p>300mBar~1100mBar</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="2" width="575">
+                        <p>Wi-Fi Specification</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td width="234">
+                        <p><em>Frequency</em></p>
+                    </td>
+                    <td width="341">
+                        <p>2.4Ghz~2.5Ghz</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="234">
+                        <p><em>Supported Wi-Fi Protocol</em></p>
+                    </td>
+                    <td width="341">
+                        <p>802.11 b/g/n</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="234">
+                        <p><em>Antenna Type</em></p>
+                    </td>
+                    <td width="341">
+                        <p>External</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="234">
+                        <p><em>Security Protocol</em></p>
+                    </td>
+                    <td width="341">
+                        <p>WPA/WPA2 personal, WPA/WPA2 Enterprise</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="234">
+                        <p><em>Encryption Protocol</em></p>
+                    </td>
+                    <td width="341">
+                        <p>WEP/TKIP/AES</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="2" width="575"><em><br /> </em>
+                        <p>Ethernet Specification</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td width="234">
+                        <p><em>Speed</em></p>
+                    </td>
+                    <td width="341">
+                        <p>RJ45, 10/100 Mbps</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="2" width="575">
+                        <p>USB Type-C Port Specification</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td width="234">
+                        <p><em>Supported Protocol</em></p>
+                    </td>
+                    <td width="341">
+                        <p>USB Virtual Comm Port</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="234">
+                        <p><em>Baudrate</em></p>
+                    </td>
+                    <td width="341">
+                        <p>115200 Baud, 8bit, no-parity, 1 stop bit</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="2" width="575">
+                        <p>Backend Server Connectivity</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td width="234">
+                        <p><em>Server Connection</em></p>
+                    </td>
+                    <td width="341">
+                        <p>MQTT Broker with TCP, TCP-TLS, Web-Socket Connection</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="234">
+                        <p><em>Server Port</em></p>
+                    </td>
+                    <td width="341">
+                        <p>User Definable</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="234">
+                        <p><em>Encryption/Security</em></p>
+                    </td>
+                    <td width="341">
+                        <p>Public CA, Self-Signed Certificate</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="234">
+                        <p><em>Messaging Format</em></p>
+                    </td>
+                    <td width="341">
+                        <p>JSON</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="234">
+                        <p><em>Other</em></p>
+                    </td>
+                    <td width="341">
+                        <p>NTP auto RTC update</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>&nbsp;</p>
+        <h1>Device Outer Dimension</h1>
+        <p><img src="picture/evs-101 dimension.png" alt="EVS-101 Dimension" width="400" height="440" /></p>  
+        
+        <p>&nbsp;</p>
+        <h1>Mem Sensor Datasheet</h1>
+        <p><a title="sht4x datasheet" href="pdf/Sensirion_Datasheet_SHT4x.pdf" target="_blank" rel="noopener">Temperature/Humdity Sensor Datasheet</a></p>
+        <p><a title="BMP280 datasheet" href="pdf/bst-bmp280-ds001.pdf" target="_blank" rel="noopener">Room Pressure Sensor Datasheet</a></p>
+    </body>
+</html>
