@@ -8,3 +8,7 @@ Please install Android App below from Google Play Store to start configuring you
 To quickly setup the device through the android app, please refer link below,
 
 [Device Configuration With WiRiO3 Device Configurator Guide (PDF)](pdf/WiRIO3%20Device%20Configuration%20Manual.pdf)
+
+For device feature and specification, please refer link below,
+
+[EVS-101 Device Feature and Specification](EVS-101 Device Features.html)
