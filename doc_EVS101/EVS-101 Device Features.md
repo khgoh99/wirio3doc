@@ -125,7 +125,7 @@ Temperature, Humidity and Room Pressure Sensor Logger
 
 ## Mem Sensor Datasheet
 
-![Temperature/Humdity Sensor Datasheet](pdf/Sensirion_Datasheet_SHT4x.pdf)
+[Temperature/Humdity Sensor Datasheet](pdf/Sensirion_Datasheet_SHT4x.pdf)
 
-![Room Pressure Sensor Datasheet](pdf/bst-bmp280-ds001.pdf)
+[Room Pressure Sensor Datasheet](pdf/bst-bmp280-ds001.pdf)
 
