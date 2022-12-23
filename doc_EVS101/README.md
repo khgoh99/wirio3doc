@@ -11,4 +11,4 @@ To quickly setup the device through the android app, please refer link below,
 
 For device feature and specification, please refer link below,
 
-[EVS-101 Device Feature and Specification](EVS-101 Device Features.html)
+[EVS-101 Device Feature and Specification](EVS-101 Device Features.md)
