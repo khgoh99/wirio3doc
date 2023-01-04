@@ -10,7 +10,7 @@ Please install Android App below from Google Play Store to start configuring you
 
 To quickly setup the device through the android app, Press the "Conf" button once to allow the device to go into configuration mode, 
 
-![Apps QR](../picture/FWBus%20Conn%20device-ConfigButton.png)
+![Device Config Button](picture/FWBus%20Conn%20device-ConfigButton.png)
 
 Once the configuration mode is started, the Link Indicator LED will turn to "Blink-Twice".
 
