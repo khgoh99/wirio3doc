@@ -13,6 +13,7 @@ To quickly setup the device through the android app, please refer link below,
 [Device Configuration With WiRiO3 Device Configurator Guide (PDF)](pdf/WiRIO3%20Device%20Configuration%20Manual.pdf)
 
 When Installing the device, please take note of the sensor head placement location
+
 ![Sensor Head Placement Guide](picture/Installation.png)
 
 For device feature and specification, please refer link below,
