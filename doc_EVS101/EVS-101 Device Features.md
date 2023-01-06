@@ -127,9 +127,9 @@ Temperature, Humidity and Room Pressure Sensor Logger
 
 [Sensirion web page for the Temperature/Humdity Sensor SHT40](https://sensirion.com/products/catalog/SHT40/)
 
-[Temperature/Humdity Sensor Datasheet in pdf](pdf/Sensirion_Datasheet_SHT4x.pdf)
+- [Temperature/Humdity Sensor Datasheet in pdf](pdf/Sensirion_Datasheet_SHT4x.pdf)
 
 [Bosch Sensortech web page for Room Pressure Sensor BMP280](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp280/)
 
-[Room Pressure Sensor Datasheet in pdf](pdf/bst-bmp280-ds001.pdf)
+- [Room Pressure Sensor Datasheet in pdf](pdf/bst-bmp280-ds001.pdf)
 
