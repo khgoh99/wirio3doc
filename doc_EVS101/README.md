@@ -14,7 +14,9 @@ To quickly setup the device through the android app, please refer link below,
 
 When Installing the device, please take note of the sensor head placement location
 
-![Sensor Head Placement Guide](picture/Installation.png)
+![Sensor Head Placement Guide](picture/EVS-101-Installation.png)
+
+On detail device user guide, see [here](EVS-101%20User%20Guide.md)
 
 For device feature and specification, please refer link below,
 
