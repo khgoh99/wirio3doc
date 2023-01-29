@@ -5,7 +5,7 @@ Model Number: EVS-101
 
 Temperature, Humidity and Room Pressure Sensor Logger
 
-![](doc_EVS101/picture/evs-101%20device.png)
+![](picture/evs-101%20device.png)
 
 [Downlod Specification In PDF](pdf/EVS-101%20Product%20Specification%20Rev.1.pdf)
 # System Feature
