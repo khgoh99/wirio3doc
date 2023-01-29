@@ -1,6 +1,6 @@
 # EVS-101 User Guide
 
-![EVS-101](picture/evs-101%20device.png)
+![EVS-101](picture/evs-101 evice.png)
 
 ## Installation Requirement
 

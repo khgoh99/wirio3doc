@@ -16,7 +16,7 @@ When Installing the device, please take note of the sensor head placement locati
 
 ![Sensor Head Placement Guide](picture/EVS-101-Installation.png)
 
-On detail device user guide, see [here](EVS-101%20User%20Guide.md)
+On detail device user guide, see [here](EVS-101 User Guide.md)
 
 For device feature and specification, please refer link below,
 
