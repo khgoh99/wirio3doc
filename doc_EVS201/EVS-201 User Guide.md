@@ -15,7 +15,7 @@ After power, the device start the connection process to the server. To view the 
 
 If the device currently try to connect to the network (Either though Ethernet or Wi-Fi), it will indicate "Link Down"
 
-![Display Link Down](picture/EVS201_Disp_LinkDown.png)
+![Display Link Down](picture/EVS201_Disp_Linkdown.png)
 
 When the device successfully connected to the local network and obtain the IP address from DHCP server, it will indicate "Link Up" with the device's IP Address
 
