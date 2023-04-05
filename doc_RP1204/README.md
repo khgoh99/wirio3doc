@@ -16,4 +16,4 @@ On the detail User Guide, please refer [here](RP1204 User Guide.md)
 
 For device feature and specification, please refer [here](RP1204_Device_Specification.md)
 
-
+**Please take note that to prevent the water/dust to leak into the enclosure, please make sure that the wire going through the wire gland is having outter dimeter between 6.5mm to 11mm.**
