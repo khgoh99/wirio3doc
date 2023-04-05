@@ -15,15 +15,15 @@ After power, the device start the connection process to the server. To view the 
 
 If the device currently try to connect to the network (Either though Ethernet or Wi-Fi), it will indicate "Link Down"
 
-![Display Link Down](picture/EVS-101-LinkDown.png)
+![Display Link Down](picture/EVS201_Disp_LinkDown.png)
 
 When the device successfully connected to the local network and obtain the IP address from DHCP server, it will indicate "Link Up" with the device's IP Address
 
-![Display Link Up](picture/EVS-101-LinkUp.png)
+![Display Link Up](picture/EVS201_Disp_LinkUp.png)
 
 Once the link is up, the device will try to connect to the Server. Once server connection is successful, it will indicated "Server Up"
 
-![Display Server Up](picture/EVS-101-ServerUp.png)
+![Display Server Up](picture/EVS201_Disp_ServerUp.png)
 
 Once the server is Up, real time temperature, relative humidity and room pressure data will be updated to the server periodically.
 
