@@ -1,6 +1,6 @@
-# Quick Setup Guide (RP-0103D)
+# Quick Setup Guide (RP-1204)
 
-**Industial IoT Remote I/O**
+**Water/Dust Resistance Industial IoT Remote I/O**
 
 Please install Android App below from Google Play Store to start configuring your device.
 
