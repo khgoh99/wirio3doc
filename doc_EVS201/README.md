@@ -1,6 +1,8 @@
-# Quick Setup Guide (RP-0103D)
+# Quick Setup Guide (EVS-201)
 
-**Industial IoT Remote I/O**
+**Industial IoT Odour Gas Sensor with Temperature/Humidity Monitoring**
+
+![EVS-201](picture/EVS201_device.png)
 
 Please install Android App below from Google Play Store to start configuring your device.
 
@@ -12,8 +14,8 @@ To quickly setup the device through the android app, please refer link below,
 
 [Device Configuration With WiRiO3 Device Configurator Guide (PDF)](pdf/WiRIO3%20Device%20Configuration%20Manual.pdf)
 
-On the detail User Guide, please refer [here](EVS-101 User Guide.md)
+On the detail User Guide, please refer [here](EVS-201 User Guide.md)
 
-For device feature and specification, please refer [here](EVS-101 Device Features.md)
+For device feature and specification, please refer [here](EVS-201 Device Features.md)
 
 
