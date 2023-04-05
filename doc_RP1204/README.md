@@ -14,6 +14,6 @@ To quickly setup the device through the android app, please refer link below,
 
 On the detail User Guide, please refer [here](EVS-101 User Guide.md)
 
-For device feature and specification, please refer [here](EVS-101 Device Features.md)
+For device feature and specification, please refer [here](RP1204_Device_Specification.md)
 
 
