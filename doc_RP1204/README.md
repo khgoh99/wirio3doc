@@ -12,7 +12,7 @@ To quickly setup the device through the android app, please refer link below,
 
 [Device Configuration With WiRiO3 Device Configurator Guide (PDF)](pdf/WiRIO3%20Device%20Configuration%20Manual.pdf)
 
-On the detail User Guide, please refer [here](EVS-101 User Guide.md)
+On the detail User Guide, please refer [here](RP1204 User Guide.md)
 
 For device feature and specification, please refer [here](RP1204_Device_Specification.md)
 
