@@ -1,6 +1,6 @@
 # Industrial IoT Enviroment Sensor
 
-Model Number: EVS-101
+Model Number: EVS-201
 
 Industial IoT Odour Gas Sensor with Temperature/Humidity Monitoring
 
