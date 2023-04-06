@@ -10,7 +10,7 @@ Temperature, Humidity and Room Pressure Sensor Logger
 [Downlod Specification In PDF](pdf/EVS-101%20Product%20Specification%20Rev.1.pdf)
 # System Feature
 
-## Wi-Fi/Ethernet Connected UHF RFID Tag Reader
+## Wi-Fi/Ethernet Connected
 
 - Connection is from device connected to server.
 - Once system power up, it will auto create a persistence connection to the server without user intervention.
