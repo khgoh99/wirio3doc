@@ -1,6 +1,6 @@
 # EVS-201 User Guide
 
-![EVS-101](picture/EVS201_device.png)
+![EVS-201](picture/EVS201_device.png)
 
 ## Power up the device
 The device is power up through the USB-C connector. Please connect the device to any USB Charger Adapter or Power supply that able to supply minimum of 5V 1A.
