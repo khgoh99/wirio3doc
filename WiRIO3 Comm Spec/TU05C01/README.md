@@ -1,9 +1,6 @@
-﻿# *TU-04-C04 Multi-Channel RFID Reader Communication Specification*
+﻿# *TU-05-C01 Single Channel RFID Reader Communication Specification*
 
 This comunication specifiacation is based on top of [WiRIO3 Basic Communication Specification](../WiRIO3%20Comm%20Spec/WiRIO3%20MQTT%20Base%20Communication%20Spec/README.md).
-
-
-[Device Specific Communication Specification](../WiRIO3%20Comm%20Spec/TU04C04/README.md)
 
 # <a name="_toc83063359"></a>Contents
 1. [The Device Peripheral – RFID Reader](#_toc167379807)
@@ -36,26 +33,6 @@ This comunication specifiacation is based on top of [WiRIO3 Basic Communication 
 
     5. [Tag Reading/Writing Return Code](#_toc167379821)
 
-2. [The Device Peripheral – Output Port](#_toc167379822)
-
-    1. [Output Port Peripheral](#_toc167379823)
-
-        - [Attribute](#_toc167379824)
-
-        - [Telematics Data](#_toc167379825)
-
-        - [RPC Call and Response](#_toc167379826)
-
-3. [The Device Peripheral – Input Port](#_toc167379827)
-
-    1. [Input Port Peripheral](#_toc167379828)
-
-        - [Attribute](#_toc167379829)
-
-        - [Telematics Data](#_toc167379830)
-
-        - [RPC Call and Response](#_toc167379831)
-
 
 
 
@@ -76,8 +53,6 @@ This comunication specifiacation is based on top of [WiRIO3 Basic Communication 
 |*d.uhfrfid.pwrmax*|Integer|Maximum reader power in dBm|
 |*d.uhfrfid.pwrmin*|Integer|Minimum reader power in dBm|
 |*d.uhfrfid.csmax*|Integer|Maximum Tag Cache Memory size (in number of tag)|
-|*d.uhfrfid.antstate*|Array of Boolean|Each element indicates if the antenna channel is detected connect to external antenna.Eg. [true,false,true,true], indicate that Antenna Channel 1,3,4 is connected with antenna and channel 2 is NOT connected with antenna. |
-|*d.uhfrfid.antison*|Array of Boolean|Each element indicated if the antenna output channel is ON (true) or OFF (false).Eg. [true,false,true,true], indicate that Antenna Output Channel 1,3,4 is ON and channel 2 OFF.|
 |*d.uhfrfid.temp*|Integer|RFID reader internal temperature in degree Celsius.Temperature must not exceed 85°C. Once it reached 85°C, it will force the reader to stop the tag detection to prevent system from overheating.|
 |*d.uhfrfid.readerver*|String|Internal RFID Reader Module Firmware ID|
 
@@ -97,7 +72,6 @@ Configuration of the reading behavior, timing and triggering during tag inventor
 |*s.uhfrfid.devreadperiod*|Integer|Period in millisecond for the device to read for the tag in the multi tag reading loop. Once the tag reading is started, within the period, the reading process cannot be interrupted. The device will only return after finished the period. The setting range is 500ms to 10000ms.|
 |*s.uhfrfid.auto*|Boolean|False : Will only start Tag Inventory/Reading upon request (r. uhfrfid.start=true) and stop when reach s.uhfrfid.periodTrue : Will continue Tag Inventory/Reading when r.uhfrfid.start=true and stop when r.uhfrfid.start=false.Please noted if it is set to True, the reader will start the Tag Inventory/Reading process immediately after the system is power up.|
 |*s.uhfrfid.period*|Integer|Reading period in second when s. uhfrfid.auto=false.Value: 5sec ~ 300sec|
-|*s.uhfrfid.inptrig*|Boolean Array|Enable(True) or Disable(False) Input trigger from on board input port to start the Tag reading/inventory process when the s.uhfrfid.auto=false.E.g. “s.uhfrfid.inptrig” : [true,false] with enable input port#0 to start the Tag reading/inventory process.|
 |*s.uhfrfid.cachetagremove*|Boolean|If true, will auto remove the tag from the cache memory after the period given by s.uhfrfid.cacheperiod.If false, the tag data will still in the cache memory until the tag inventory process is stop by calling r.uhfrfid.start=false or the reader stop when reading period is over during s.uhfrfid.auto=false.No more new tag will be added into the cache once the cache memory is full.|
 |*s.uhfrfid.cacheperiod*|Integer|Period for the detected tag to be stay in the Tag Cache Memory before remove it from the cache. After a tag is detected, if the tag is still staying in the reader reading range, the same tag will be re-detected again. As long as the re-detected period is less than the cache period, the tag will not be removed from the cache. The system will only update the tag info in the Telematics topic when the tag detected is newly detected and not already available in the Tag Cache Memory. Value provided is millisecond.Value=500ms to 60000msThis setting only valid if s.uhfrfid.cachetagremove=true.|
 |*s.uhfrfid.tagremoveupd*|Boolean|When set to True, it will send out the tag information when the tag is no more detected and remove from the cache memory.|
@@ -150,7 +124,7 @@ Various reader reading tuning values are available to allow fast reading of the 
 |***Key***|**Value Type**|**Description**|
 | -: | :- | :- |
 |*s.uhfrfid.antenb*|Array of Integer|Auto Detect, Enable and Disable the Antenna Output Channel. During Auto mode, the device will enable the antenna channel when antenna is detected on the antenna port.When is set to Enable, it will force enable the antenna channel without checking the present of the antenna on the antenna port. If it is set to Disable, the antenna channel will be disable.0=Auto, 1=Enable, 2=Disable. \*\* Enable the antenna output channel without antenna connected to the port will damage the antenna output port.E.g. {0,0,2,2} will set Antenna CH1 and 2 to auto mode, 3 and 4 to Disable.|
-|*s.uhfrfid.power*|Array of double|Set each antenna output power in dBm, range 1dbm to 33dbm. Eg. [28,30,30,30], will set Antenna Channel 1 to 28dBm and Antenna Channel 2,3,4 to 30dBm.The power is in 1dBm step.|
+|*s.uhfrfid.power*|Array of double|Set the antenna output power in dBm, range 5dbm to 30dbm. Eg. [28].|
 
 #### *Demo and Testing*
 
@@ -448,86 +422,3 @@ When reading is stop, all the Tag information in the cache memory will be delete
 |*0504*|Reader Over Temperature|
 |*0505*|Standing Wave Ratio/Reflection too large|
 |*f000*|Command Sent Error|
-##
-# <a name="_toc167379822"></a>The Device Peripheral – Output Port
-## <a name="_toc167379823"></a>Output Port Peripheral
-
-|***Key***|**Value**|
-| -: | :- |
-|*keycmd*|outputport|
-|*feature*|2ch (indicating the device have 2 Ch Output Port)|
-
-### <a name="_toc167379824"></a>Attribute
-#### *Device Only Attribute*
-
-|***Key***|**Value Type**|**Description**|
-| -: | :- | :- |
-|*d.outputport.ch*|Integer|Indicate number of available output Channel|
-
-#### *Share Attribute*
-
-|***Key***|**Value Type**|**Description**|
-| -: | :- | :- |
-|*s.outputport.setup*|Array of object|Define the on state of each channel, each element will contain value as below,<br><pre>{<br>“ch”: 0,<br>“onishigh”:true,<br>“mode”: 0,<br>“fperiodon”: 3,<br>“fperiodoff”: 1,<br>“pulsecnt: 1<br>}</pre>- ch, Channel index<br>- onishigh, if set to true, it will turn on the internal MOSFET/Switch when “ison” is true.<br>- mode, output port mode. Available option are,<br>- 0, Standard output mode<br>- 1, Pulse output mode<br>- fperiodon, on pulse width period in 100ms per count during Pulse Mode<br>- fperiodoff, off pulse width period in 100ms per count during Pulse Mode<br>- pulsecnt, number of on/off cycle during pulse mode. The total period of each on/off cycle will be,Cycle Period = “fperiodon” + “fperiodoff”|
-
-
-### <a name="_toc167379825"></a>Telematics Data
-
-|***Key***|**Value Type**|**Description**|
-| -: | :- | :- |
-|*t.outputport.param*|Array of object|Return the status of each port in the array if the status of the array changes. Each element of array will consist of value listed below,<br><pre>{<br>“ch”: 0,“ison”: true<br>“ts”: 342352<br>}</br><pre>Where,<br>- ch, is the port channel index.<br>- ison, set to true if it is on and false when it is off.- ts, system time stamp in millisecond|
-
-### <a name="_toc167379826"></a>RPC Call and Response
-
-|***Key***|**Value Type**|**Description**|
-| -: | :- | :- |
-|*r.outputport.param*|Array of Object|Set the output port. Each element in the array will be consist of,<br><pre>{<br>“ch”: 0,<br>“ison”: true,<br>}</pre>Where,<br>- ch, is the channel index.<br>- ison, set to true of false, for further detail, please refer below for Standard Mode and Pulse Mode. During Standard mode, set “ison” to true will turn on the output, set it to false will turn it off.During Pulse mode, set “ison” to true will start the pulse output. During the output port is sending out the output pulse, <br>- If “ison” is set to true again, it will reset and restart the pulse counting internal counter and continue with the pulse output.<br>- If “ison” is set to false, it will immediately stop the pulse output and set the output port to off.Return result in RPC Call Responser.outputport.result = true if the command process successfully.|
-
-
-
-![](Aspose.Words.e289e39c-5943-403e-91ed-dc89ffaa2e84.019.png)
-
-Using High Power N-Channel MOSFET as Switch.
-
-Please take note that the output port is not suitable to direct drive high current inductive load. If driving high current inductive load is require, please isolate the output with a relay.
-
-
-
-# <a name="_toc167379827"></a>The Device Peripheral – Input Port
-## <a name="_toc167379828"></a>Input Port Peripheral
-
-|***Key***|**Value**|
-| -: | :- |
-|*keycmd*|inputport|
-|*feature*|2ch (indicating the device have 2 Ch Output Port)|
-### <a name="_toc167379829"></a>Attribute
-#### *Device Only Attribute*
-
-|***Key***|**Value Type**|**Description**|
-| -: | :- | :- |
-|*d.inputport.ch*|Integer|Indicate number of available input Channel|
-
-#### *Share Attribute*
-
-|***Key***|**Value Type**|**Description**|
-| -: | :- | :- |
-|*s.inputport.setup*|Array of object|Define the on state of each channel, each element will contain value as below,<br><pre>{<br>“ch”: 0,<br>“onishigh”:false,<br>“mode” : 0,<br>“debounce”: 10<br>}</pre><br>- ch (Must provide) = Channel index <br>- onislow (optional) = if true, on will be during the input is in LOW state.<br>- Mode (optional) = Input port mode, <br>- 0 = Push Button Mode, Push Button input that will publish out once when the switch is press/pushed.<br>- 1 = normal input port that publish out the on/off state when input port changes the state.<br>- debounce (optional) = debounce delay count index. The higher the index, the longer the device delay. Value = 2 to 50 (default 10). Only available when Mode=0 (button input mode)|
-
-
-### <a name="_toc167379830"></a>Telematics Data
-
-|***Key***|**Value Type**|**Description**|
-| -: | :- | :- |
-|*r.inputport.param*|Array of object|Return the status of each port in the array. Each element of array will consist of value listed below during Mode=0,<br><pre>{<br>“ch”: 0,<br>“ison”: true,<br>“ts”: 34245324,<br>“count”: 554<br>}</pre><br>- ch = Input Channel Index.<br>- ison = true if it is on and false when it is off.<br>- ts = System timestamp in millisecond.- count = number of On/Off cycle count. Add 1 when the input turn from off to on.If the Mode=1 (Button Mode), the Status return will be in format below for each input,<br><pre>{<br>“ch”: 0,<br>“btnpress”: 1,<br>“ts”: 34245323,<br>“count”: 554<br>}</pre><br>- ch = Input Channel Index.<br>- ts = System timestamp in millisecond.<br>- btnpress can be either <br>- 1 for normal press, <br>- 2 for double click the button, <br>- 3 for triple click the button, <br>- 4 for long press for more than 4~5 second.<br>- count = number of button press cycle count according. Add 1 on each button press.|
-
-
-### <a name="_toc167379831"></a>RPC Call and Response
-N/A
-
-
-
-![](Aspose.Words.e289e39c-5943-403e-91ed-dc89ffaa2e84.020.png)
-
-
-
-

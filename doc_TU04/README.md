@@ -42,3 +42,7 @@ DIP Switch setting on the I/O Extension Unit.
 [Device Specification](TU04-Device_Spec.md)
 
 [Device Specification (PDF)](pdf/TU-04-C04 Product Specification.pdf)
+
+[WiRIO3 Basic Communication Specification](../WiRIO3%20Comm%20Spec/WiRIO3%20MQTT%20Base%20Communication%20Spec/README.md)
+
+[Device Specific Communication Specification](../WiRIO3%20Comm%20Spec/TU04C04/README.md)

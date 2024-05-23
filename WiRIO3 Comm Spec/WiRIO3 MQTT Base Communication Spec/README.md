@@ -1,4 +1,5 @@
 ﻿# *WiRIO3 MQTT Base Communication Specification*
+A communication standard based on JSON to allow IoT devices to exchange information with MQTT server/broker.
 
 # <a name="_toc83063359"></a>Contents
 [Overview](#_toc167371599)
