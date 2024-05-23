@@ -332,6 +332,7 @@ The configuration and setting of the device is group under a Device Peripheral c
 |***Key***|**Value**|
 | -: | :- |
 |*keycmd*|sys|
+
 ### System Only Attribute
 
 |***Key***|**Value Type**|**Description**|
@@ -340,6 +341,7 @@ The configuration and setting of the device is group under a Device Peripheral c
 |*d.sys.name*|String|Device Name|
 |*d.sys.desc*|String|Device Description|
 |*d.sys.fwid*|String|Firmware ID|
+
 
 |***Key***|**Description**|
 | -: | :- |
@@ -356,6 +358,7 @@ The configuration and setting of the device is group under a Device Peripheral c
 |*d.sys.epochvalid*|True or false to indicate if the EPOCH time is valid or not valid|
 |*d.sys.rpcbusy*|Device is busy processing RPC request|
 |*d.sys.cputemp*|CPU Temperature in Celcius|
+
 ### Share Attribute
 
 |***Key***|**Description**|
