@@ -13,7 +13,7 @@
 
 [Communicate Through USB Serial Port](#_toc167371604)
 
-[The Device Peripheral – Core System](#_toc167371605)
+[The Device Peripheral – System](#_toc167371605)
 
 [Limitation and Counter Measure of MQTT server](#_toc167371606)
 
@@ -336,38 +336,38 @@ The configuration and setting of the device is group under a Device Peripheral c
 
 |***Key***|**Value Type**|**Description**|
 | -: | :- | :- |
-|*d.sys.model*|String|<p>Device Model</p><p></p>|
-|*d.sys.name*|String|<p>Device Name</p><p></p>|
-|*d.sys.desc*|String|<p>Device Description</p><p></p>|
-|*d.sys.fwid*|String|<p>Firmware ID</p><p></p>|
+|*d.sys.model*|String|Device Model|
+|*d.sys.name*|String|Device Name|
+|*d.sys.desc*|String|Device Description|
+|*d.sys.fwid*|String|Firmware ID|
 
 |***Key***|**Description**|
 | -: | :- |
-|*d.sys.addr*|<p>Device current IP address</p><p></p>|
-|*d.sys.iface*|<p>Device connected interface, either “WiFISTA” for Wi-Fi Link Interface or “ETHERNET” for Ethernet Link Interface</p><p></p>|
-|*d.sys.ssid*|<p>Device Wi-Fi Received Signal Strength Index (Only Available if device is on Wi-Fi Link)</p><p></p>|
-|*d.sys.fwid*|<p>Device Firmware ID (unique for each type of device)</p><p></p>|
-|*d.sys.datecode*|<p>Firmware version Date Code in YYMMDD</p><p></p>|
-|*d.sys.model*|<p>Device model number</p><p></p>|
-|*d.sys.name*|<p>Device Name</p><p></p>|
-|*d.sys.desc*|<p>Device description</p><p></p>|
-|*d.sys.perip*|<p>Available device peripheral in JSON Array. Data in this key will provide detail properties of the available peripheral in the device. Available key under d.sys.perip are as below,</p><p>cmdkey : The peripheral  reference ID.</p><p>feature : Value that describing the feature of this peripheral. </p><p></p>|
-|*d.sys.linkup*|<p>True of False to indicate if the device is connected or not connected to the MQTT Broker server.</p><p></p>|
-|*d.sys.epochvalid*|<p>True or false to indicate if the EPOCH time is valid or not valid</p><p></p>|
-|*d.sys.rpcbusy*|<p>Device is busy processing RPC request</p><p></p>|
-|<p>*d.sys.cputemp*</p><p></p>|CPU Temperature in Celcius|
+|*d.sys.addr*|Device current IP address|
+|*d.sys.iface*|Device connected interface, either “WiFISTA” for Wi-Fi Link Interface or “ETHERNET” for Ethernet Link Interface|
+|*d.sys.ssid*|Device Wi-Fi Received Signal Strength Index (Only Available if device is on Wi-Fi Link)|
+|*d.sys.fwid*|Device Firmware ID (unique for each type of device)|
+|*d.sys.datecode*|Firmware version Date Code in YYMMDD|
+|*d.sys.model*|Device model number|
+|*d.sys.name*|Device Name|
+|*d.sys.desc*|Device description|
+|*d.sys.perip*|Available device peripheral in JSON Array. Data in this key will provide detail properties of the available peripheral in the device. Available key under d.sys.perip are as below,cmdkey : The peripheral  reference ID.feature : Value that describing the feature of this peripheral. |
+|*d.sys.linkup*|True of False to indicate if the device is connected or not connected to the MQTT Broker server.|
+|*d.sys.epochvalid*|True or false to indicate if the EPOCH time is valid or not valid|
+|*d.sys.rpcbusy*|Device is busy processing RPC request|
+|*d.sys.cputemp*|CPU Temperature in Celcius|
 ### Share Attribute
 
 |***Key***|**Description**|
 | -: | :- |
-|*s.sys.epochsec*|<p>EPOCH time in second. The system Real time clock can be updated by the server through this key.</p><p></p>|
+|*s.sys.epochsec*|EPOCH time in second. The system Real time clock can be updated by the server through this key.|
 |*s.sys.mqttsenddelay*|Minimum period between 2 consecutive MQTT Packet sending. This is to prevent packet sending too fast causing MQTT broker to drop packet. Value 100~1000 (millisecond).|
 
 ### RPC Call and Response
 
 |***Key***|**Value Type**|**Description**|
 | -: | :- | :- |
-|*r.sys.reboot*|Boolean|<p>Reboot the device</p><p></p>|
+|*r.sys.reboot*|Boolean|Reboot the device|
 
 
 # <a name="_toc167371606"></a>Limitation and Counter Measure of MQTT server
