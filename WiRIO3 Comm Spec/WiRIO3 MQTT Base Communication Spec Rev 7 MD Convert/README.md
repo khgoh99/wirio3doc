@@ -87,13 +87,13 @@ The default topic setting is as below,
 
 |*Type of Topic*|*WiRIO3 Default*|
 | -: | :- |
-|*Telematics Data*|W3/<DeviceID>/telemetry|
-|*Device Publish System Attribute*|W3/<DeviceID>/attributes|
-|*Update Device’s System Attribute*|W3/<DeviceID>/attributes|
-|*RPC Request*|W3/<DeviceID>/rpc/request/+|
-|*RPC Reply*|W3/<DeviceID>/rpc/response/+|
+|*Telematics Data*|W3/\<DeviceID>/telemetry|
+|*Device Publish System Attribute*|W3/\<DeviceID>/attributes|
+|*Update Device’s System Attribute*|W3/\<DeviceID>/attributes|
+|*RPC Request*|W3/\<DeviceID>/rpc/request/+|
+|*RPC Reply*|W3/\<DeviceID>/rpc/response/+|
 
-The <DeviceID> is the unique ID of the device in the format of WIRIO3\_AABBCCDDEEFF where AABBCCDDEEFF is the 6 bytes hex string in upper case. E.g. WIRIO3\_43DF01543AF0.
+The \<DeviceID> is the unique ID of the device in the format of WIRIO3\_AABBCCDDEEFF where AABBCCDDEEFF is the 6 bytes hex string in upper case. E.g. WIRIO3\_43DF01543AF0.
 
 The “+” wildcard on the RPC request and RPC reply topic will allow the subscriber to receive any topic with other info attached at the end of the topic. For more detail on the MQTT topic wildcard, please refer to the Standard MQTT Broker documentation.
 # <a name="_toc83063367"></a><a name="_toc167371602"></a>Overview on function of each topic
@@ -104,7 +104,7 @@ The device will subscribe to this topic and monitor for any request from the Hos
 ## <a name="_toc83063370"></a>Telematics Data
 The device will use this topic to push the device’s telematics data. The Host Server should monitor this topic for any new sensor information update from the device and process the sensor data accordingly.  
 ## <a name="_toc83063371"></a>RPC Request
-If the server requires the device to do certain action, the Host Server will publish the request into this topic. On the request message’s topic, Host Server is required to publish the message into the topic with a <RequestID> append at the end of the topic, e.g. W3/<DeviceID>/request/<RequestID>. During the RPC reply, the <RequestID> will be append at the end of the reply message’s topic. The device **will not** do any validation/checking on the <RequestID> value.
+If the server requires the device to do certain action, the Host Server will publish the request into this topic. On the request message’s topic, Host Server is required to publish the message into the topic with a <RequestID> append at the end of the topic, e.g. W3/\<DeviceID>/request/<RequestID>. During the RPC reply, the <RequestID> will be append at the end of the reply message’s topic. The device **will not** do any validation/checking on the <RequestID> value.
 
 Please note that the <RequestID> is compulsory. The system can provide any arbitrary number when publishing the RPC Request.
 
