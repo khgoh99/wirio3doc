@@ -37,6 +37,6 @@ Further detail on the device configuration using Android App, please refer link 
 
 [Device Specification (PDF)](pdf/TU-05-C01%20Product%20Specification%20Rev.1.pdf)
 
-[WiRIO3 Basic Communication Specification](../WiRIO3%20Comm%20Spec/WiRIO3%20MQTT%20Base%20Communication%20Spec/README.md)
+[WiRIO3 Basic Communication Specification](../WiRIO3%20Comm%20Spec/WiRIO3%20MQTT%20Base%20Communication%20Spec/)
 
-[Device Specific Communication Specification](../WiRIO3%20Comm%20Spec/TU05C01/README.md)
+[Device Specific Communication Specification](../WiRIO3%20Comm%20Spec/TU05C01/)
