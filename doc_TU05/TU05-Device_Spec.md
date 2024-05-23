@@ -1,7 +1,7 @@
 
 # Device Specification
 
-Model Number: TU-04-C04
+Model Number: TU-05-C01
 
 ![](picture/TU05C01View1.png)
 
@@ -28,7 +28,7 @@ Model Number: TU-04-C04
  - Auto read tag data on any one of the tag’s memories banks when the  tag is detected.
  - Write/Lock/Kill Tag with Tag Selection Filter.
 
-## Water Proving Aluminium Enclosure
+## Water Proofing Aluminium Enclosure
 
  - Full aluminium enclosure to allow proper heat dissipation during long hour of operation.
  - Water and dust resistance with rubble seal and air vent outlet on the chassis.
