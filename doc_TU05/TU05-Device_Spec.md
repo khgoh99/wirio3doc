@@ -19,7 +19,6 @@ Model Number: TU-05-C01
  - Based on Imping E310 chip with improved read rate and superior receive sensitivity for long rang reading.
  - Build in 1200 Tag Cache size for highspeed reading.
  - Able to match with various type of 50Ω Antenna to manage the tag detection range and angle.
- - Auto antenna detection and will only turn-on the antenna output channel if the antenna is detected.
  - User can also adjust the output power from 5dBm to 30dBm to manage the reading distance remotely though the MQTT server/Broker.
  - With the correct antenna and low lost feeder cable, the reader can achieve up to the reading range of 8 meter or more.
  - Build in device core temperature sensor, providing remote temperature monitoring when the device is operating under high temperature environment.
