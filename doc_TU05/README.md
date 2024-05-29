@@ -2,6 +2,8 @@
 
 **Single Channel Industrial IoT UHF RFID Fix Reader**
 
+![](picture/TU05C01View2.png)
+
 ## Power Supply
 
 The RFID Reader can be power up either through direct DC power supply or USB Type-C connector.
