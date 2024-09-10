@@ -1,12 +1,18 @@
 # Industrial IoT Remote I/O
 
-Model Number: ERP-1204
+Model Number: RP2-1204M
 
-12 Bidirectional Opto-isolated input channel and 4 Relay Contact Output Channel
+12 Bidirectional Opto-isolated input channel, 4 Relay Contact Output Channel equiped with Modbus slave interface.
 
-Enclusure is Water/Dust resistance. Please take note that to prevent the water/dust to leak into the enclosure, please make sure that the wire going through the wire gland is having outter dimeter between 6.5mm to 11mm.
+Enclusure is Water/Dust resistance. Please take note that to prevent the water/dust to leak into the enclosure, please make sure that the wire going through the wire gland is having outter dimeter between 6.5mm to 11mm (PG13.5) and 4mm to 8mm(PG9).
 
-[Downlod Specification In PDF](pdf/RP-1204%20Product%20Specification%20Rev.1.pdf)
+[Downlod Hardware Specification In PDF](pdf/RP2-1204M%20Product%20Specification%20Rev.1.pdf)
+
+[Download Modbus Address Defination](pdf/RM1204M%20Modbus%20Address.pdf)
+
+[Download MQTT Communication Base Specification](pdf/WiRIO3%20MQTT%20Base%20Communication%20Spec%20Rev%207.pdf)
+
+[Download MQTT Communication Speciation for RP2-1204M](pdf/WiRIO3%20RP2-1204M%20WAN-IO%20Communication%20spec%20Rev%203.pdf)
 
 # System Feature
 
@@ -14,6 +20,7 @@ Enclusure is Water/Dust resistance. Please take note that to prevent the water/d
 - Once system power up, it will auto create a persistence connection to the server without user intervention.
 - Server can be placed either at public cloud, private cloud or LAN.
 - Device able to work behind firewall.
+- Modbus Slave Interface support multiple range of Baudrate.
 
 ## Network link with MQTT Broker Server
 
@@ -33,9 +40,8 @@ Enclusure is Water/Dust resistance. Please take note that to prevent the water/d
 
 - System configures with Android Apps.
 - Provide detail device properties, E.g., model number, version number, etc.
-- Connectivity selection either using Wi-Fi, Ethernet or USB Link.
-- Upload WPA Enterprise Server private/public key.
-- Server IP/Domain Name Setup.
+- Connectivity selection either using Wi-Fi and/or Modbus RTU Slave.
+- MQTT Server IP/Domain Name Setup.
 - DHCP/Fix IP.
 - Internet Time Server Setting.
 
@@ -89,16 +95,24 @@ Enclusure is Water/Dust resistance. Please take note that to prevent the water/d
 |Security Protocol|	WPA/WPA2 personal, WPA/WPA2 Enterprise|
 |Encryption Protocol|	WEP/TKIP/AES|
 
+## Modbus Inteface
+
+|Item|Description|
+|--|--|
+|Protocol|	Modbus RTC Slave |
+|Baud Rate|	4800 Baud to 115200 Baud, 8-N-1|
+|Slave Address|	1 to 247|
+
 ## Backend Server Connectivity
 
 |Item|Description|
 |--|--|
-|Server Connection|	MQTT Broker with TCP, TCP-TLS, Web-Socket Connection|
+|Server Connection|	MQTT Broker with TCP, TCP-TLS, Web-Socket, SSL Web-Socket Connection|
 |Server Port|User Definable|
-|Encryption/Security|Public CA, Self-Signed Certificate|
+|Encryption/Security|Public CA|
 |Messaging Format|JSON|
 |Other|NTP auto RTC update|
 
 ## Device Outer Dimension
 
-![Dimension](picture/RP-1204%20outer%20dimension.png)
+![Dimension](picture/RP2-1204M%20outer%20dimension.png)
