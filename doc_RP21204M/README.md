@@ -4,7 +4,7 @@
 
 To configure the device, please refer to [this Link](../webconfig/)
 
-On the detail User Guide, please refer [here](RP1204 User Guide.md)
+On the device User Guide, please refer [here](RP2_1204M User Guide.md)
 
 For device feature and specification, please refer [here](RP2_1204M_Device_Specification.md)
 
