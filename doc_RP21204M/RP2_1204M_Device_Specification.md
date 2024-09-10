@@ -116,3 +116,5 @@ Enclusure is Water/Dust resistance. Please take note that to prevent the water/d
 ## Device Outer Dimension
 
 ![Dimension](picture/RP2-1204M%20outer%20dimension.png)
+
+**Please take note that to prevent the water/dust to leak into the enclosure, please make sure that the wire going through the wire gland is having outter dimeter between 6.5mm to 11mm (PG13.5) and 4mm to 8mm (PG9).**

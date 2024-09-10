@@ -1,5 +1,7 @@
 # Wan I/O RP2-1204M User Guide
 
+![](picture/RP2-1204%20Image.png)
+
 ## Overview
 
 This remote I/O consist of 12 Channel of Opto-isolated input port and 4 Channel of Relay output port. 
@@ -40,3 +42,15 @@ The control board included with a configuration push button switch. Once press, 
 The configuration button can be disabled by removing the jumper cap as indicate in the diagrame below.
 
 ![Remove Jumper Cap](picture/CasingOutlook-JumperConfig.png)
+
+## RS485/ModBus Bus End Termination
+
+According to the RS485 Specification, the last unit device that connected to the RS485 communication bus required to be terminated.
+
+![](picture/CasingOutlook-JumperModbus.png)
+
+The device can terminate the bus by placing the jumper cap on the "RS485 Terminate".
+
+Please take node that only 2 RS485 terminate is allowed on each RS485 bus, one is on the Modbus Master unit and the other one is on the last unit of the Modbus Slave unit.
+
+For more information on RS485 cabling and termination, please refer to [Guidelines for Proper Wiring of an RS-485 (TIA/EIA-485-A) Network](https://www.analog.com/en/resources/technical-articles/rs485-cable-specification-guide--maxim-integrated.html)
