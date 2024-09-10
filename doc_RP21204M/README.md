@@ -6,7 +6,7 @@
 
 Please refer to link below for the device documentation,
 - [Device Configuration User Guide](../webconfig/)
-- [Device Hardware User Guide](RP2_1204M%20User%20Guide.md)
+- [Device Hardware User Guide](RP2_1204M_User_Guide.md)
 - [Device Hardware and Communication Specification](RP2_1204M_Device_Specification.md)
 
 
