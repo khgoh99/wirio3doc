@@ -6,6 +6,9 @@ Model Number: TU-05-C01
 ![](picture/TU05C01View1.png)
 
 [Downlod Specification In PDF](pdf/TU-05-C01%20Product%20Specification%20Rev.1.pdf)
+
+[Download MQTT Communication Specification](pdf/TU-05-C01%20Multi%20Channel%20RFID%20reader%20Communication%20Spec%20Rev1.pdf)
+
 # System Feature
 
 ## Wi-Fi/Ethernet Connected UHF RFID Tag Reader
