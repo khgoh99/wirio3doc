@@ -1,10 +1,5 @@
 ﻿# *TU-04-C04 Multi-Channel RFID Reader Communication Specification*
 
-This comunication specifiacation is based on top of [WiRIO3 Basic Communication Specification](../WiRIO3%20Comm%20Spec/WiRIO3%20MQTT%20Base%20Communication%20Spec/README.md).
-
-
-[Device Specific Communication Specification](../WiRIO3%20Comm%20Spec/TU04C04/README.md)
-
 # <a name="_toc83063359"></a>Contents
 1. [The Device Peripheral – RFID Reader](#_toc167379807)
 
