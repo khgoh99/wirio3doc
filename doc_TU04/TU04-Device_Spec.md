@@ -5,9 +5,10 @@ Model Number: TU-04-C04
 
 ![](picture/Body%20View.png)
 
-[Downlod Specification In PDF](pdf/TU-04-C04%20Product%20Specification.pdf)
+[Device Specification (PDF)](pdf/TU-04-C04 Product Specification.pdf)
 
-[Download MQTT Communication Specification](pdf/TU-04-C04%20Multi%20Channel%20RFID%20reader%20Communication%20Spec%20Rev5.pdf)
+[Download MQTT Communication Specification](pdf/TU-04-C04 Multi Channel RFID reader Communication Spec Rev5.pdf)
+
 
 # System Feature
 
