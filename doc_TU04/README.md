@@ -43,6 +43,4 @@ DIP Switch setting on the I/O Extension Unit.
 
 [Device Specification (PDF)](pdf/TU-04-C04 Product Specification.pdf)
 
-[WiRIO3 Basic Communication Specification](../WiRIO3%20Comm%20Spec/TU04C04/)
-
-[WiRIO3 Basic Communication Specification(in pdf)](pdf/TU-04-C04 Multi Channel RFID reader Communication Spec Rev5.pdf) 
+[WiRIO3 Basic Communication Specification(PDF)](pdf/TU-04-C04 Multi Channel RFID reader Communication Spec Rev5.pdf) 
