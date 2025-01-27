@@ -2,7 +2,7 @@
 
 **Industial IoT Temperature/Humidity/Room Pressure Monitoring**
 
-![EVS-101](picture/evs-101_device.png)
+![EVS-101](picture/evs-101%20device.png)
 
 Please install Android App below from Google Play Store to start configuring your device.
 
