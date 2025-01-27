@@ -2,6 +2,8 @@
 
 **Industial IoT Temperature/Humidity/Room Pressure Monitoring**
 
+![EVS-101](picture/evs-101_device.png)
+
 Please install Android App below from Google Play Store to start configuring your device.
 
 [WiRiO3 Device Configurator Google Play Store](https://play.google.com/store/apps/details?id=com.wirio3.wifi_provision)
