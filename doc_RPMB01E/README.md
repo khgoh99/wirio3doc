@@ -2,7 +2,7 @@
 ![](picture/RP-MB01_Image.png)
 
 **Dust Resistance Industial IoT Remote Modbus Controller**
-[RP-MB01 Device Configuration User Guide](../webconfig2/)
+[RP-MB01 Device Configuration Guide](../webconfig2/)
 
 **PCB Connector**
 ![](picture/PCBConnector.png)
