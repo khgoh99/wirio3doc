@@ -12,6 +12,10 @@ When it is power up, it will automatically connected to a user configured MQTT B
 
 For more information, please refer to the device [specification](RP1204_Device_Specification.md)
 
+## NTC Port
+
+By connection the NTC sensor provided, the device is able to report the sensor surrounding temperature ranging from -55°C to +200°C with accuracy ±1%.
+
 ## Input Port
 
 Total input port is 12 Channel. All the input port is through the bidirectional opto-isolated.
@@ -20,7 +24,7 @@ User can either connect based on common positive or common negetive.
 
 The input port are divided into 3 groups. Each group will have their own common input thus provide 3 different set of input type.
 
-![I/O Port PCB Layout](picture/RP1204_PCBOutline.png)
+![I/O Port PCB Layout](picture/RP1204%20wiring.png)
 
 ## Output Port
 
@@ -37,4 +41,4 @@ The control board included with a configuration tact switch. Once press, the dev
 
 The configuration button function also extended to the push button outside the box. To disable the configuration button outside the box, please remove the Jumper Cap.
 
-![Remove Jumper Cap](picture/Remove_Jumper_Cap.png)
+![Remove Jumper Cap](picture/RP-1204%20Wiring-Disable%20Cfg%20Btn.png)
